@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>David Singleton - Curriculum Vitae</title>
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <style>
+    body {
+        margin: 0 auto;
+        padding: 1em 3em;
+        max-width: 55em;
+
+        background: #fefefe;
+        color: #222;
+
+        font: medium/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    a,
+    a:visited {
+        color: blue;
+    }
+
+    h2, h3 {
+        margin-top: 1.6em;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    }
+
+    h2 {
+        font-size: 1.3em;
+        border-bottom: 3px solid #ccc;
+    }
+
+    article li {
+        margin: .25em 0;
+    }
+
+    article .byline {
+        margin-top: -1em;
+        color: #555;
+    }
+    article .byline:before {
+        content: "↪";
+        color: #555;
+        padding: 0 .5em 0 .15em;
+        position: relative;
+        top: 1px;
+
+    }
+    article h3 .date {
+        font-weight: normal;
+    }
+
+
+    @media print {
+        body {
+            padding: 0;
+            max-width: none;
+            font-size: 10pt;
+            line-height: 15pt;
+        }
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header class="vcard">
+        <h1 class="fn">David Singleton</h1>
+        <div class="contact byline">
+            Get in contact via <a class="email" rel="me" href="mailto:david@dsingleton.co.uk">david@dsingleton.co.uk</a> or visit my website,
+            <a class="url" rel="me" href="http://dsingleton.co.uk">dsingleton.co.uk</a>, for more about me.
+        </div>
+        
+    </header>
+
+    <article>
+        <section class="introduction">
+
+            <p>Working with the web for 10+ years, I'm passionate about building great user experiences, doing both front-end and back-end development. Most recently I've focused on front-end engineering, but consider myself a generalist.</p>
+
+            <p>I've worked in small and large teams, building and maintaining sites with audiences of dozens to millions.</p>
+            
+        </section>
+
+        <section class="experience">
+             <h2>Experience &amp; Skills</h2>
+
+             <section class="lumi">
+                <h3>
+                    <a href="https://lumi.do">Lumi</a> &#8211;
+                    Lead Front-End Engineer <span class="date">(August 2011 &rarr; Present)</span>
+                </h3>
+                <p class="byline">A content discover startup, using browser history to generate personalised recommendations.</p>
+
+                <p>As the lead front-end engineer, in a very small team, I'm responsible for technology choices, architectural decisions, day-to-day development and hiring of new developers. The Lumi front-end stack I built included;</p>
+                <ol>
+                    <li><strong class="skill">HTML5</strong> - History API, LocalStorage, semantic markup</li>
+                    <li><strong class="skill">CSS3</strong> - CSS Animations, GPU acceleration for smooth scrolling, and using Chrome timeline prevent jank.</li>
+                    <li><strong class="skill">SASS</strong>/<strong class="skill">Compass</strong> - Mixins, conditional IE support, dynamic responsive breakpoints and image-spriting</li>
+                    <li><strong class="skill">Javascript</strong> - Small, modular, classes using RequireJS for dependency management</li>
+                    <li><strong class="skill">jQuery</strong> - Event handling, AJAX, DOM manipulation, plugins</li>
+                    <li><strong class="skill">Mustache</strong> - Client side rendering, shared with server-side rendering using Pystache</li>
+                    <li><strong class="skill">Grunt</strong> - Automation of JS/CSS minification, re-building assets on local changes, running linting and tests</li>
+                </ol>
+
+                <p>I built Lumi using <strong>Progressive Enhancement</strong> and <strong>Responsive Web Design</strong>, often with a <strong>Mobile-First</strong> approach, starting with plain markup, layering on styling and behaviour, and applying RWD (breakpoints and fluid layouts). This allowed us to support many more users without creating platform-specific sites or apps.</p>
+
+                <p>I took a strong interest in client-side security threats; preventing <strong>XSS</strong> and <strong>CSRF</strong>, mitigating click-jacking with <strong>X-Frame-Options</strong>, defending against session highjacking <strong>HttpOnly</strong> and <strong>Secure</strong> cookies.</p>
+                
+
+                <p>I use <strong>Python/Django</strong>to build views, <strong>APIs</strong>, internal services, tools and tests. And built a system of templates and JSON data models shared by client and server, maintaining consistent UI for push-state and full-page changes.</p>
+                
+                <p>I've worked on <strong>Chrome and Firefox extensions</strong>, writing JS to be embedded into 3rd party pages and be extremely defensive to function in hostile contexts and without affecting host pages behaviour.</p>
+
+            </section>
+
+             <section class="last-fm">
+                <h3>
+                    <a href="http://last.fm">Last.fm</a> &#8211;
+                    Senior Web Developer <span class="date">(June 2007 &rarr; August 2011)</span>
+                </h3>
+                <p class="byline">A music streaming app and social network, 25m+ daily page views, 15m+ registered users, 12 languages</p>
+
+                <p>I worked in a team of web-developers, moving between front-end and back-end tasks, working closely with teams of designers, product managers, support staff, operations and data services engineers.</p>
+
+                <p>On back-end projects I used <strong>OO PHP5</strong>, <strong>PostgreSQL</strong>, <strong>MySQL</strong>, <strong>Memcached</strong> and <strong>Thrift</strong> to develop sites features and public HTTP APIs. Profiling DB, internal API calls and code performance using <strong>Xdebug</strong> to ensure scalability.</p>
+
+                <p>Developing front-end features I used HTML, CSS, Javascript, MooTools,
+                    All features where developed with a strong focus on performance (reducing HTTP requests, optimised resources, lazy loading), Internationalisation and with an awareness of SEO.
+                </p>
+            
+                <p>I worked on, and led, a number of high-profile features and project, including:</p>
+
+                <ul>
+                    <li>
+                        Rebuilding the Homepage;
+                        A complete redesign, requiring high level <strong>browser compatibility and testing</strong>.
+                        Working with varied data sources to generate localised content and developing scaling strategies.
+                    </li>
+
+                    <li>Developing new visual web-radio experience, starting by <strong>rapid prototyping</strong> with interaction designers, the executive team and advertising team to best meet requirements</li>
+
+                    <li><strong>Performance optimisation</strong> of Last.fm API for <a href="http://blog.last.fm/2009/12/07/launching-xbox-part-1-the-war-room">Xbox360 App</a> launch</li>
+
+                    <li>Building a complex suite of <strong>internal tools</strong> for our customer support teams, hugely improving their workflows</li>
+
+                    <li>Developed a <a href="http://dsingleton.github.io/short-urls/">short URL scheme</a> to reference Last.fm content in tweets (before t.co existed) and in print</li>
+
+                    <li>
+                        Music Manager;
+                        Product used by 200k+ Artist &amp; Label users upload and manage their content. 
+                        Worked with a team developing a royalties scheme, which generated reports and payments for 100k Artists &amp; Labels
+                    </li>
+                </ul>
+            </section>
+
+            <section class="spring-digital">
+                <h3><a href="http://www.springdigital.co.uk">Spring Digital</a> &#8211; Web Developer <span class="date">(Aug 2005 &rarr; June 2007)</span></h3>
+                <p class="byline">30 person design agency in West London.  Member of a 4 person development team.</p>
+
+                <p>Front-end development of <strong>semantic</strong> and <strong>accessible</strong> sites. Back-end development of bespoke <strong>LAMP</strong> content management systems. Able to flexibly switch between roles and tasks easily, </p>
+                <ul>
+                    <li>Developing an <strong>internal web app</strong> that managed company <strong>projects and accounting</strong>, used <strong>daily by 20+ staff</strong></li>
+                    <li>Ran <strong>code reviews</strong> within the dev-team, focusing on quality, <strong>security</strong> and documenting practice. Also worked with designers to <strong>teach XHTML/CSS/JS</strong> and improve the design process</li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+
+            <section class="university-of-portsmouth">
+                <h3><a href="http://port.ac.uk">University of Portsmouth</a> &#8211; <span class="date">(Sep 2002 &rarr; Jun 2005)</span></h3>
+                <p class="byline">First class degree, in Internet Technology, with honours.</p>
+            </section>
+        </section>
+
+        <section class="interests">
+            
+            <h2>Other Things</h2>
+
+            <h3>Speaking &amp; Events</h3>
+            <p class="byline">Checkout my <a rel="me" href="http://lanyrd.com/profile/dsingleton/">Lanyard profile</a> for all events that I'm interested in or have spoken at.</p>
+
+            <p>I was invited to speak about <a href="http://dsingleton.co.uk/blog/lastfm-vs-xbox-dibi-conference/">scaling Last.fm for Xbox</a> at <a href="http://www.dibiconference.com">DIBI</a> in Newcastle.</p>I've spoken at smaller 'un-conference' events in London, like <a href="http://barcamp.org/">Barcamp</a> (on the topic of <a href="https://github.com/dsingleton/php-lifestream">life-streams</a> generated from microformats and social graph tools) and at <a href="http://www.scalecamp.org.uk/">ScaleCamp</a>, a two-day event on scaling and performance. I've also attended a number of <a href="http://new.musichackday.org/">Music Hack Days</a> both as a Last.fm representative and as a hacker.</p>
+
+            <h3>Public Code</h3>
+            <p class="byline">You can find these on my <a href="https://github.com/dsingleton">Github Profile</a>, some popular and interesting ones are:</p>
+            <ol>
+                <li><a href="https://github.com/dsingleton/flickr-browser">Flickr-Browser</a>, a <strong>Backbone.js</strong> for browsing my exported Flickr photo library and metadata</li>
+                <li><a href="https://github.com/dsingleton/now-playing-radiator">Now Playing Radiator</a> - An information radiator using the Last.fm API to display what a user is listening to in real time</li>
+            </ol>
+        </section> 
+    </article>
+
+</body>
+</html>

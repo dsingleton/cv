@@ -1,0 +1,23 @@
+{
+  "name": "dsingleton-cv",
+  "version": "0.0.1",
+  "description": "My Curriculum Vitae",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "~0.4.1"
+  },
+  "devDependencies": {
+    "grunt-gh-pages": "~0.8.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dsingleton/cv.git"
+  },
+  "author": "David Singleton",
+  "bugs": {
+    "url": "https://github.com/dsingleton/cv/issues"
+  }
+}
